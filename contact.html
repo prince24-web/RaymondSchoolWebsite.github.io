@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+              .parent{
+    width:100% ;
+    height: 50px;
+    color:#fefefe;
+    background-color: #0a1128;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    
+}
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #caf0f8;
+}
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.appear{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #8b80f9;
+}
+.parent img{
+    position: absolute;
+    left: 25px;
+    height: 50px;
+    width: 50px;
+}
+.parent p{
+    position: absolute;
+    left: 75px;
+   font-size: large;
+}
+svg{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 15px;
+}
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    left: 15px;
+    background-color: #0a1128;
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 999;
+   
+}
+ li{
+        display: inline;
+    }
+    ul{
+        word-spacing: 1em;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+    ul li{
+        margin: 0 0.75rem;
+    }
+    ul:hover a{
+        color: #585858;
+    }
+    ul:hover a:hover{
+        color: #8b80f9;
+        box-shadow: 0 2px 0 0 currentColor;
+    }
+    ul li a{
+        text-decoration: none;
+        transition: 0.3s all ease;
+        color: inherit;
+    }
+
+.nav-links li {
+    padding: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links.active {
+    display: flex;
+
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.school-footer {
+    background-color: #004d99;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    height: 20rem;
+    width: 95.5%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex-basis: 25%;
+    margin-bottom: 20px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+}
+
+.footer-section p, 
+.footer-section a {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Social media icons */
+.social-media a {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex-basis: 50%;
+    }
+    .school-footer{
+        position: absolute;
+       
+        height: 35rem;
+    }
+    .school-footer-img{
+        position: absolute;
+        display: inline;
+        bottom: 4rem;
+        height: 35px;
+        left: 16px;
+    }
+    .footer-bottom p{
+        position: absolute;
+        bottom: 0;
+        left: 5rem;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        flex-basis: 100%;
+    }
+
+    .footer-section p, 
+    .footer-section a {
+        font-size: 12px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="ray">
+            <img src="school-logo.png" width="55px" height="60px" alt="School Logo">
+            <p>RAYMOND SCHOOL</p>
+            <ul class="nav-links">
+                <li><a href="C:\Users\Prince Chidera\Desktop\RAYMOND SCHOOLS\hompagesmart.html">HOME</a></li>
+                <li><a href="C:\Users\Prince Chidera\Desktop\RAYMOND SCHOOLS\about.html">ABOUT</a></li>
+                <li><a href="C:\Users\Prince Chidera\Desktop\RAYMOND SCHOOLS\programs.html">PROGRAMS</a></li>
+                <li><a href="C:\Users\Prince Chidera\Desktop\RAYMOND SCHOOLS\contact.html">CONTACT</a></li>
+            </ul>
+            <!-- Menu icon (hamburger) -->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="menu-icon" viewBox="0,0,256,256" width="50px" height="50px" fill-rule="nonzero"><g fill="#fefefe" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5,8c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,23c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,38c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175z"></path></g></g></svg>
+        </div>
+    </div>
+    <footer class="school-footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>We are dedicated to providing quality education, helping students grow academically and personally in a nurturing environment.</p>
+            </div>
+    
+            <div class="footer-section quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="C:\Users\Prince Chidera\Desktop\RAYMOND SCHOOLS\hompagesmart.html">Home</a></li>
+                    <li><a href="C:\Users\Prince Chidera\Desktop\RAYMOND SCHOOLS\about.html">About</a></li>
+                    <li><a href="C:\Users\Prince Chidera\Desktop\RAYMOND SCHOOLS\programs.html">programs</a></li>
+                    <li><a href="C:\Users\Prince Chidera\Desktop\RAYMOND SCHOOLS\contact.html">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p><i class="fa fa-map-marker"></i>5R3V+2PQ, Limca Rd, Nkpor, 434101, Anambra</p>
+                <p><i class="fa fa-phone"></i> +234-814-950-7897</p>
+                <p><i class="fa fa-envelope"></i> raymondschool@gmail.com</p>
+            </div>
+    
+            <div class="footer-section social-media">
+                <h2>Follow Us</h2>
+                <div class="school-footer-img">
+                <a href="#"><img src="icons8-facebook-50.png" alt="" srcset=""></a>
+                <a href="#"><img src="icons8-linkedin-48.png" alt="" srcset=""></i></a>
+                <a href="#"><img src="icons8-instagram-50.png" alt="" srcset=""></i></a>
+            </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 School Name. All rights reserved.</p>
+        </div>
+    </footer>
+   
+</body>
+<script>
+    
+    document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+</script>
+</html>
